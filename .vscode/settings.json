@@ -1,3 +1,21 @@
 {
-    "editor.formatOnSave": true
+    "git.autofetch": true,
+    "files.eol": "\n",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "redhat.telemetry.enabled": false,
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "eslint.validate": [
+        "typescript",
+        "javascript",
+        "vue"
+    ],
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true,
+        "source.organizeImports": false
+    }
 }
