@@ -1,7 +1,8 @@
+image:
+  file: .devcontainer/Dockerfile
 ports:
   - port: 3000
-    protocol: "http"
 tasks:
   - command: |
-      yarn install
-      yarn dev
+      npm install
+      npm run dev
