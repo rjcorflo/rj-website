@@ -14,3 +14,5 @@ vscode:
     - eamodio.gitlens
     - esbenp.prettier-vscode
     - octref.vetur
+    - stylelint.vscode-stylelint
+    - redhat.vscode-yaml
