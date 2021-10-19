@@ -5,6 +5,7 @@
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
     "redhat.telemetry.enabled": false,
     "[yaml]": {
         "editor.defaultFormatter": "redhat.vscode-yaml"
