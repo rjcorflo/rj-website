@@ -75,8 +75,8 @@ const config: NuxtConfig = {
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
     // https://go.nuxtjs.dev/vuetify
-    '@nuxtjs/vuetify',
-    'nuxt-purgecss'
+    '@nuxtjs/vuetify'
+    // 'nuxt-purgecss'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -130,7 +130,9 @@ const config: NuxtConfig = {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {}
+  build: {
+    extractCSS: true
+  }
 };
 
 export default config;

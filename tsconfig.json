@@ -28,6 +28,7 @@
       "@nuxt/types",
       "@nuxt/content",
       "@types/node",
+      "@nuxtjs/vuetify",
       "vuetify"
     ]
   },
