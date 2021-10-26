@@ -46,6 +46,7 @@
     "jest": "^27.0.5",
     "lint-staged": "^10.5.4",
     "netlify-cli": "^6.7.0",
+    "nuxt-purgecss": "^1.0.0",
     "prettier": "^2.3.2",
     "stylelint": "^13.13.1",
     "stylelint-config-recommended": "^5.0.0",

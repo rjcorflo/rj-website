@@ -75,7 +75,8 @@ const config: NuxtConfig = {
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
     // https://go.nuxtjs.dev/vuetify
-    '@nuxtjs/vuetify'
+    '@nuxtjs/vuetify',
+    'nuxt-purgecss'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
