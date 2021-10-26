@@ -1,7 +1,9 @@
 <template>
   <main>
     <section v-if="posts" class="w-full max-w-5xl mx-auto">
-      <h1 class="title">Blog</h1>
+      <h1 class="title">
+        Blog
+      </h1>
       <posts post-type="blog" :amount="10" />
     </section>
   </main>
@@ -17,6 +19,6 @@ export default {
       error({ message: 'Blog posts not found' });
     }
     return { posts };
-  },
+  }
 };
 </script>
