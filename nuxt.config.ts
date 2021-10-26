@@ -126,6 +126,11 @@ const config: NuxtConfig = {
           success: colors.green.accent3
         }
       }
+    },
+    treeShake: {
+      components: [
+        'VFooter', 'VApp', 'VNavigationDrawer', 'VList', 'VListItem', 'VListItemAction', 'VMain', 'VContainer', 'VCard', 'VCardText', 'VCardTitle', 'VRow', 'VCol', 'VIcon'
+      ]
     }
   },
 
