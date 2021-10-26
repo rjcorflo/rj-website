@@ -75,8 +75,8 @@ const config: NuxtConfig = {
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
     // https://go.nuxtjs.dev/vuetify
-    '@nuxtjs/vuetify',
-    'nuxt-purgecss'
+    '@nuxtjs/vuetify'
+    // 'nuxt-purgecss'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -126,16 +126,13 @@ const config: NuxtConfig = {
           success: colors.green.accent3
         }
       }
-    },
-    treeShake: {
-      components: [
-        'VFooter', 'VApp', 'VNavigationDrawer', 'VList', 'VListItem', 'VListItemAction', 'VMain', 'VContainer', 'VCard', 'VCardText', 'VCardTitle', 'VRow', 'VCol', 'VIcon'
-      ]
     }
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {}
+  build: {
+    extractCSS: true
+  }
 };
 
 export default config;
