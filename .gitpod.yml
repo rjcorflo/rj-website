@@ -1,0 +1,18 @@
+image:
+  file: .devcontainer/Dockerfile
+ports:
+  - port: 3000
+tasks:
+  - command: |
+      npm install
+      npm run dev
+
+vscode:
+  extensions:
+    - dbaeumer.vscode-eslint
+    - github.vscode-pull-request-github
+    - eamodio.gitlens
+    - esbenp.prettier-vscode
+    - octref.vetur
+    - stylelint.vscode-stylelint
+    - redhat.vscode-yaml

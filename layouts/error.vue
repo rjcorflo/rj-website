@@ -1,25 +1,42 @@
 <template>
-  <main>
-    <section>
-      <template v-if="error.statusCode === 404">
-        <h1 class="title">{{ error.message || 'Page Not Found' }}</h1>
-        <h2 class="subtitle">404</h2>
-        <p class="mb-4">Looks like you've followed a broken link or entered a URL that doesn't exist on this site.</p>
-      </template>
-      <template v-else>
-        <h1 class="title">An error occurred</h1>
-        <p class="mb-4">Looks like you've followed a broken link or entered a URL that doesn't exist on this site.</p>
-      </template>
-      <nav class="mt-12" aria-label="go to home">
-        <router-back to="/" class="block"/>
-      </nav>
-    </section>
-  </main>
+  <v-app dark>
+    <h1 v-if="error.statusCode === 404">
+      {{ pageNotFound }}
+    </h1>
+    <h1 v-else>
+      {{ otherError }}
+    </h1>
+    <NuxtLink to="/"> Home page </NuxtLink>
+  </v-app>
 </template>
 
 <script>
 export default {
-  name: 'error',
-  props: ['error']
-}
+  layout: 'empty',
+  props: {
+    error: {
+      type: Object,
+      default: null,
+    },
+  },
+  data() {
+    return {
+      pageNotFound: '404 Not Found',
+      otherError: 'An error occurred',
+    };
+  },
+  head() {
+    const title =
+      this.error.statusCode === 404 ? this.pageNotFound : this.otherError;
+    return {
+      title,
+    };
+  },
+};
 </script>
+
+<style scoped>
+h1 {
+  font-size: 20px;
+}
+</style>
